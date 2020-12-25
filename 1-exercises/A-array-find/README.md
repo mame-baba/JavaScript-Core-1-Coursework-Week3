@@ -11,6 +11,7 @@ You can write a predicate function that checks if a string is longer than 6 char
 ```js
 function isLongName(name) {
   return name.length > 6;
+  
 }
 ```
 

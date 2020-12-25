@@ -8,6 +8,25 @@
 
 var pairsByIndex = [[0, 3], [1, 2], [2, 1], null, [3, 0]];
 
+function checkForNull(element){
+  // if(element === null){
+  //   return true;
+  // }
+  // else {
+  // return false;
+  // }
+   return element === null;
+}
+var hasNull = pairsByIndex.some(checkForNull); 
+if(hasNull){
+  process.exit(1);
+}
+
+// some functions always return true or false; Also they only need at least one of the condition to be met. 
+
+// function checkForNull(element){
+  // return element === null;
+// }
 // If there is a null value in the array exit the program with the error code
 // https://nodejs.org/api/process.html#process_process_exit_code
 // process.exit(1);

@@ -4,6 +4,15 @@
 */
 
 // write your code here
+function checkName(name){
+  return name.length > 7 && name[0]==="A";
+}
+
+function findLongNameThatStartsWithA (names){
+  return names.find(checkName);
+}
+
+
 
 var names = [
   "Rakesh",
@@ -18,6 +27,9 @@ var names = [
 ];
 
 var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
+
+
+
 
 console.log(longNameThatStartsWithA);
 
