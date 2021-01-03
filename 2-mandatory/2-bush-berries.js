@@ -21,7 +21,14 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function bushChecker() {}
+
+function bushChecker(bush) {
+  if (bush.every(item => item === "pink")){
+    return `Bush is OK`;
+  }else {
+    return `Toxic! Do not Approach`;
+  }
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

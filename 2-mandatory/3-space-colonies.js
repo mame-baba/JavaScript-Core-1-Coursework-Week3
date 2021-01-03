@@ -15,7 +15,10 @@
   
 */
 
-function colonisers() {}
+
+function colonisers(arr) {
+  return arr.filter(travellers => travellers[0] === "A" && travellers.includes("family"));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

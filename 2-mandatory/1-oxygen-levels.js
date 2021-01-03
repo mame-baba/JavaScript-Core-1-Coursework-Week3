@@ -11,8 +11,19 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
-
+function safeLevels(arr) {
+  let arr2 = null; 
+  for (let i = 0; i < arr.length; i++){
+    arr[i].substring(0, 4);
+    if(arr[i] >= 19.5 && arr[i] < 23.5){
+       arr[i];
+     
+    }
+    return arr[i]; 
+  }
+  
+}
+// safeLevels(oxygenLevels1);
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const oxygenLevels1 = ["24.2%", "11.3%", "19.9%", "23.1%", "29.3%", "20.2%"];
