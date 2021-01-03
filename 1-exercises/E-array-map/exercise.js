@@ -9,3 +9,13 @@ function multiplyTheNumber(number){
 var newArray = numbers.map(multiplyTheNumber); 
 
 console.log(newArray);
+
+var newArray = numbers.map(function (number) {
+    return number * 100;
+  });
+  console.log(newArray);
+
+  var newArray = numbers.map(number => {
+    return number * 100
+  });
+  console.log(newArray);

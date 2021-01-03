@@ -8,9 +8,8 @@
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-function checkPairs(array)
-  // how do i define checkPairs to be able to pass it into filter()
-var pairsByIndex = pairsByIndex.filter(checkPairs); // Complete this statement
+
+var pairsByIndex = pairsByIndexRaw.filter(Element => Array.isArray(Element) && Element.length === 2); // Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];

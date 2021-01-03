@@ -5,7 +5,11 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
 
-var groupIsOnlyStudents = group.every() // complete this statement
+function isStudent(element) {
+	return element in students;
+}
+
+var groupIsOnlyStudents = group.every(isStudent) // complete this statement
 
 
 
