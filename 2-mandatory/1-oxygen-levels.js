@@ -11,18 +11,15 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels(arr) {
-  let arr2 = null; 
-  for (let i = 0; i < arr.length; i++){
-    arr[i].substring(0, 4);
-    if(arr[i] >= 19.5 && arr[i] < 23.5){
-       arr[i];
-     
+function safeLevels(oxygenLevel) {
+  for (let i =0; i< oxygenLevel.length; i++) {
+    oxygenLevel[i] = parseFloat(oxygenLevel[i]);
+    if (oxygenLevel[i] > 19.5 && oxygenLevel[i] < 23.5) {
+        return `${oxygenLevel[i]}%`;
     }
-    return arr[i]; 
   }
-  
 }
+  
 // safeLevels(oxygenLevels1);
 /* ======= TESTS - DO NOT MODIFY ===== */
 
