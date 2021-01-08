@@ -13,7 +13,8 @@
 
 function safeLevels(oxygenLevel) {
   for (let i =0; i< oxygenLevel.length; i++) {
-    oxygenLevel[i] = parseFloat(oxygenLevel[i]);
+    // oxygenLevel[i] = parseFloat(oxygenLevel[i]);
+    oxygenLevel[i] = oxygenLevel[i].substring(0, 4);
     if (oxygenLevel[i] > 19.5 && oxygenLevel[i] < 23.5) {
         return `${oxygenLevel[i]}%`;
     }

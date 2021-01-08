@@ -1,7 +1,7 @@
 /*
  Before we go the big story; we will introduce more string methods.
  Some of the methods you're using in Array have similar ones with strings.
- Methods like : IndexOf, Include, Search, Slice , Spilt and more.
+ Methods like : IndexOf, Include, Search, Slice , Split and more.
  
  You can always google how a method of a string works!
  Here are links to some of those:
@@ -10,7 +10,7 @@
  Now let's do this small exercise
  
  Using string methods update the checkCodeIsThere() function
-  - The function will have a string as a paramter
+  - The function will have a string as a parameter
   - The function should check if the string has the word "code" exists in the string
   - If it does exist, return the index of it, if not return "Not found"
 
@@ -20,13 +20,13 @@
 function checkCodeIsThere(stringText) {
   let magicWord = "code";
   //edit code below
-  if (stringText ) {
-    return stringText;
+  if (stringText.includes(magicWord) ) {
+    return stringText.indexOf(magicWord);
   } else {
     return "Not found";
   }
 }
-// couldn't complete 
+
 /*
   I am new to London and would like to know what transport I can take to different famous locations.
   The input provided contains a list of locations in London. Each of locations is followed by a list
@@ -64,8 +64,13 @@ function checkCodeIsThere(stringText) {
   
   Hint: Use the corresponding array method to split the array.
 */
-function getTransportModes() {}
-
+function getTransportModes(arr) {
+  var transport = arr.slice(1, arr.length);
+  return transport;
+}
+function getTransportModes(arr){
+  return arr.slice(1);
+}
 /*
   Implement the function isAccessibleByTransportMode that
 
@@ -81,7 +86,17 @@ function getTransportModes() {}
     
   Hint: Use the corresponding array method to decide if an element is member of an array.
 */
-function isAccessibleByTransportMode() {}
+function isAccessibleByTransportMode(transportModes, mode) {
+if(transportModes.includes(mode)){
+return true;
+}else{
+  return false;
+}
+}
+function isAccessibleByTransportMode (transport, mode){
+  return transport.includes(mode);
+} // method 3
+  
 
 /*
   Implement the function getLocationName that
@@ -92,7 +107,12 @@ function isAccessibleByTransportMode() {}
    - Returns the name of the location
       e.g: "Tower Bridge"
 */
-function getLocationName() {}
+function getLocationName(arr) {
+  var location = arr[0];
+  return location;
+
+  
+}
 
 /*
  We arrived at the final method. it won't take long if you use the previously implemented functions wisely.
